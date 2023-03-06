@@ -13,7 +13,7 @@ node {
 
     stage('Build image') {
   
-       app = docker.build("dfranklin-at-bg/test")
+       app = docker.build("lochrian/test")
     }
 
     stage('Test image') {
