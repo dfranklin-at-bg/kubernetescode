@@ -7,9 +7,13 @@ node {
         checkout scm
     }
 
+    stage('piss off') {
+        sh 'echo "pissing off"'
+    }
+
     stage('Build image') {
   
-       app = docker.build("raj80dockerid/test")
+       app = docker.build("dfranklin-at-bg/test")
     }
 
     stage('Test image') {
